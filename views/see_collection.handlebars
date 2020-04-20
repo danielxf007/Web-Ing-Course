@@ -1,0 +1,22 @@
+<h1>Collection</h1>
+<br>
+<table style="width:100%" border="1">
+  <tr>
+    <th>Identification</th>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Course Grade</th>
+  </tr>    
+    {{#each student}}
+  <tr>
+    <td align="center">{{id}}</td>
+    <td align="center">{{fname}}</td>
+    <td align="center">{{lname}}</td>
+    <td align="center">{{cgrade}}</td>
+  </tr>
+  {{/each}}
+</table>
+
+<br>
+<button onclick="location.href='/'" type="button">
+    Go Back</button>

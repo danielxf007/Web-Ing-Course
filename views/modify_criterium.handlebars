@@ -1,0 +1,21 @@
+<h1>Modify Criterium</h1>
+
+<form id="register-form" method="POST">
+  <label for="id">Identification:</label><br>
+  <input type="text" id="id" name="id"><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="cgrade">Course Grade:</label><br>
+  <input type="number" id="cgrade" name="cgrade" step="0.01" min="0" max="5"><br><br>
+  <input type="submit" value="start modifying">
+</form>
+<br>
+<button onclick="location.href='/'" type="button">
+    Go Back</button>
+{{#if nothingFilled}}
+<div class="alert">
+  <script> window.alert('You need to enter at least one criterium')</script>
+</div>
+{{/if}}

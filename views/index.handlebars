@@ -1,0 +1,27 @@
+<h1>Operations</h1>
+
+<br>
+<button onclick="location.href='/create_register'" type="button">
+    Create Register</button>
+<br>
+<br>
+<button onclick="location.href='/get_collection'" type="button">
+    Get Collection</button>
+<br>
+<br>
+<button onclick="location.href='/delete_register'" type="button">
+    Delete Register</button>
+<br>
+<br>
+<button onclick="location.href='/modify_criterium'" type="button">
+    Modify Collection</button>
+<br>
+<br>
+<form method="POST">
+  <button type="submit" formmethod="post">Average Class Grade</button>
+</form>
+{{#if showAverage}}
+<div class="alert">
+  <script>window.alert('The average grade of the course was: ' + {{gradeAverage}})</script>
+</div>
+{{/if}}
